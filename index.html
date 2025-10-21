@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Báo giá - Yo Hot Layout 1920 (V9)</title>
+  <style>
+    :root{--accent:#1f6feb;--muted:#6b7280;--bg:#f7fafc;--card:#ffffff}
+    *{box-sizing:border-box}
+    body{
+      font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background:var(--bg);color:#111827;margin:24px;
+    }
+    .container{max-width:900px;margin:0 auto}
+    .card{
+      background:var(--card);
+      border-radius:12px;
+      box-shadow:0 6px 18px rgba(15,23,42,0.06);
+      padding:28px;
+    }
+    header{display:flex;justify-content:space-between;align-items:flex-start;gap:16px}
+    .brand{display:flex;gap:16px;align-items:center}
+    .logo{
+      width:84px;height:84px;border-radius:8px;
+      background:linear-gradient(135deg,var(--accent),#6ee7b7);
+      display:flex;align-items:center;justify-content:center;
+      color:white;font-weight:700;font-size:20px;
+    }
+    h1{font-size:18px;margin:0}
+    p.lead{margin:6px 0 0;color:var(--muted)}
+    .meta{text-align:right}
+    .meta div{font-weight:600}
+    .section{margin-top:22px}
+    .section h2{font-size:14px;margin:0 0 10px}
+    table{width:100%;border-collapse:collapse;margin-top:6px}
+    th,td{padding:10px 12px;text-align:left;border-bottom:1px solid #eef2f7}
+    th{font-size:13px;color:var(--muted);font-weight:600}
+    td.right{text-align:right}
+    .summary{display:flex;justify-content:flex-end;margin-top:12px}
+    .summary .box{
+      width:320px;background:#f8fafc;border-radius:8px;
+      padding:12px;border:1px solid #e5e7eb;
+    }
+    .summary .row{display:flex;justify-content:space-between;padding:6px 0}
+    .total{font-size:18px;font-weight:700;color:#0f172a}
+    .note{font-size:13px;color:var(--muted);margin-top:12px}
+    .cta{display:flex;gap:12px;margin-top:18px}
+    .btn{
+      background:var(--accent);color:white;padding:10px 14px;
+      border-radius:8px;text-decoration:none;font-weight:600;
+      border:none;cursor:pointer;transition:background 0.2s;
+    }
+    .btn:hover{background:#1559c1}
+    .btn.ghost{
+      background:transparent;color:var(--accent);
+      border:1px solid rgba(31,111,235,0.15);
+    }
+    footer{
+      margin-top:18px;font-size:13px;color:var(--muted);
+      display:flex;justify-content:space-between;align-items:center
+    }
+    .signature{margin-top:18px;display:flex;justify-content:flex-end}
+    .sig-box{width:320px;text-align:left}
+    .small{font-size:12px;color:var(--muted)}
+    @media print{
+      body{background:white;margin:0}
+      .container{max-width:100%;padding:0}
+      .btn, .cta {display:none}
+      .card{box-shadow:none;border-radius:0;padding:20px}
+    }
+    .logo {
+  width:84px;
+  height:84px;
+  object-fit:cover;
+  object-position:center;
+  box-shadow:0 2px 8px rgba(0,0,0,0.08);
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card" role="document">
+      <header>
+        <div class="brand">
+          <img src="/img/Img.jpg" alt="User" class="logo">
+          <div>
+            <h1>Báo giá — <span style="font-weight:600">Yo Hot </span></h1>
+            <p class="lead">Thiết kế giao diện trang chủ (.FIG - Figma), bố cục hiện đại, kích thước 1920px.</p>
+          </div>
+        </div>
+        <div class="meta">
+          <div>Ngày: <strong>21/10/2025</strong></div>
+          <div>Mã báo giá: <strong>YH-1920-V9</strong></div>
+        </div>
+      </header>
+
+      <section class="section">
+        <h2>Thông tin dự án</h2>
+        <p class="small"><strong>Khách hàng:</strong> Anh Đức</p>
+        <p class="small"><strong>Dự án:</strong> Yo Hot — Thiết kế trang chủ</p>
+      </section>
+
+      <section class="section">
+        <h2>Phạm vi công việc</h2>
+        <ul class="small" style="margin:6px 0 0;padding-left:18px">
+          <li>Thiết kế 01 layout trang chủ (kích thước 1920px — bản desktop)</li>
+          <li>Áp dụng logo, nội dung, hình ảnh do khách hàng cung cấp</li>
+          <li>Bàn giao file gốc <strong>.FIG (Figma)</strong></li>
+          <li>Hỗ trợ chỉnh sửa nhẹ sau khi khách hàng up lên host</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>Chi phí</h2>
+        <table aria-describedby="price-table">
+          <thead>
+            <tr><th>Hạng mục</th><th style="width:120px">Số lượng</th><th style="width:160px" class="right">Giá (VND)</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Thiết kế trang chủ Yo Hot Layout 1920 (V9)</td><td>01</td><td class="right">520,000</td></tr>
+          </tbody>
+        </table>
+
+        <div class="summary">
+          <div class="box">
+            <div class="row"><div>Tạm tính</div><div>520,000 VND</div></div>
+            <div class="row"><div>Đặt cọc (30%)</div><div>156,000 VND</div></div>
+            <div class="row" style="border-top:1px dashed #e6eef8;margin-top:8px;padding-top:8px"><div class="total">Tổng cộng</div><div class="total">520,000 VND</div></div>
+          </div>
+        </div>
+
+        <p class="note">Điều khoản thanh toán: Khách hàng chuyển trước 30% (156,000 VND) để bắt đầu dự án. Thanh toán 70% còn lại (364,000 VND) sau khi hoàn tất và chỉnh sửa. Sau khi thanh toán đầy đủ, em sẽ gửi file gốc .FIG.</p>
+      </section>
+
+      <section class="section">
+        <h2>Thời gian & Hỗ trợ</h2>
+        <p class="small">Thời gian bàn giao: <strong>Trước 12:00 trưa, ngày 22/10/2025</strong>. Bao gồm hỗ trợ chỉnh sửa nhẹ sau khi khách hàng up lên host.</p>
+      </section>
+
+      <!-- Thông tin chuyển khoản -->
+      <div class="payment" style="margin-top:18px;display:flex;justify-content:flex-end">
+        <div style="width:320px;background:#f8fafc;border-radius:8px;padding:14px;border:1px solid #e5e7eb;box-shadow:0 2px 6px rgba(15,23,42,0.04)">
+          <div style="font-weight:700;margin-bottom:8px;color:#0f172a">💳 Thông tin chuyển khoản</div>
+          <div style="font-size:13px;color:#374151;margin-bottom:4px">Ngân hàng: <strong>Sacombank</strong></div>
+          <div style="font-size:13px;color:#374151;margin-bottom:4px">Số TK: <strong>050121592972</strong></div>
+          <div style="font-size:13px;color:#374151;margin-bottom:4px">Tên TK: <strong>NGUYEN NGOC SANG</strong></div>
+          <div style="font-size:13px;color:#374151">SĐT: <strong>0374059466</strong></div>
+        </div>
+      </div>
+
+      <div class="signature">
+        <div class="sig-box">
+          <p class="small">Người thiết kế: <strong>Ngọc Sang</strong></p>
+          <p class="small">Liên hệ qua zalo: 0333362880</p>
+        </div>
+      </div>
+
+      <div class="cta">
+        <button class="btn" onclick="window.print()">In / Lưu PDF</button>
+        <a class="btn ghost" href="#" onclick="copyContent(event)">Sao chép HTML</a>
+      </div>
+
+      <footer>
+        <div class="small">Cảm ơn anh đã tin tưởng, em sẽ đảm bảo tiến độ và chất lượng đúng cam kết.</div>
+        <div class="small">Trang tạo cho Yo Hot</div>
+      </footer>
+    </div>
+  </div>
+
+  <script>
+    function copyContent(e){
+      e.preventDefault();
+      const html = document.documentElement.outerHTML;
+      navigator.clipboard.writeText(html).then(()=>{
+        alert('Đã sao chép mã HTML — anh có thể dán vào trình soạn thảo hoặc email.');
+      }).catch(()=>{
+        alert('Không thể sao chép tự động. Vui lòng chọn và sao chép thủ công.');
+      });
+    }
+  </script>
+</body>
+</html>
